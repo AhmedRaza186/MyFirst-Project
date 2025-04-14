@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>saylaniform</title>
+    <style>
+        * {
+            text-transform: capitalize;
+        }
+
+        #checkbox {
+            text-align: left;
+            width: 50px;
+        }
+
+        #saylani {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+        }
+
+        #Registration {
+            text-align: center;
+            font-size: xx-large;
+        }
+
+        #fb {
+            display: inline-block;
+
+            margin-left: 80px;
+            height: 50px;
+        }
+
+        #insta {
+            display: inline-block;
+
+            height: 50px;
+        }
+
+        #youtube {
+            display: inline-block;
+
+            height: 50px;
+
+        }
+
+        select {
+            width: 30%;
+            height: 35px;
+
+
+        }
+
+        form {
+            text-align: center;
+        }
+        select:hover{
+            border: 2px solid lawngreen;
+        }
+
+        input {
+            width: 30%;
+            height: 35px;
+            border: 2px solid #159435;
+        }
+
+        .CNIC {
+            width: 30px;
+        }
+
+        .form-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            justify-content: center;
+            margin-bottom: 15px;
+            padding-left: 100px;
+        }
+
+        .form-group {
+            width: 40%;
+            /* Har row me do select boxes */
+
+
+        }
+
+        .form-group h2 {
+            display: block;
+            /* margin-bottom: 5px; */
+            font-weight: bold;
+        }
+
+        .form-group select,
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 2px solid #159435;
+            border-radius: 4px;
+        }
+
+        .form-row2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            justify-content: center;
+            margin-bottom: 15px;
+            padding-left: 100px;
+        }
+
+        .form-group2 {
+            width: 40%;
+            /* Har row me do select boxes */
+
+
+        }
+
+        .form-group2 h2 {
+            display: block;
+            /* margin-bottom: 5px; */
+            font-weight: bold;
+        }
+
+        .form-group2 select,
+        .form-group2 input {
+            width: 100%;
+            padding: 8px;
+            border: 2px solid #159435;
+            border-radius: 4px;
+        }
+
+        #checkbox {
+            text-align: left;
+            width: 50px;
+        }
+
+        #submit {
+            width: 100%;
+            background-color: rgb(32, 143, 56);
+            color: white;
+        }
+
+        .captcha-box {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 250px;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+        }
+
+        .captcha-box input {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            
+        }
+
+        .captcha-logo {
+            margin-left: auto;
+        }
+
+        .captcha-logo img {
+            width: 30px;
+        }
+
+        .signup-btn {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .signup-btn:hover {
+            background-color: #218838;
+        }
+        #assign{
+            text-align: center;
+            color: black;
+            font-size: xx-large;
+        }
+        .nextassign{
+            width: 250px;
+            height:250px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="assign">Assigments 5:Saylani Form</h1>
+    <img id="saylani" src="./saylani logo.svg" alt="saylani">
+    <a href="https://www.facebook.com/SaylaniWelfareInternationalTrust/" target="_blank"><img id="fb" src="./fb logo.avif"
+            alt=""></a>
+    <a href="https://www.instagram.com/officialswit/?hl=en" target="_blank"> <img id="insta" src="./insta.webp"
+            alt=""></a>
+    <a href="https://www.youtube.com/c/saylaniwelfareinternationaltrust" target="_blank"> <img id="youtube"
+            src="https://static.vecteezy.com/system/resources/previews/023/986/480/non_2x/youtube-logo-youtube-logo-transparent-youtube-icon-transparent-free-free-png.png"
+            alt=""></a>
+            <hr>
+    <h2 id="Registration">Registration Form-SMIT</h2>
+    <hr>
+    
+
+    <form action="" method="post">
+        <div class="form-row">
+            <div class="form-group">
+                <!-- <label>Select Country</label> -->
+                <h2>Select Country</h2>
+                <select>
+                    <option value="Select Country">Select Country</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Turkey">Turkey</option>
+                </select>
+            </div>
+            <pre>                            </pre>
+            <div class="form-group">
+                <!-- <label>Select City</label> -->
+                <h2>Select City</h2>
+                <select>
+                    <option value="select City">Select City</option>
+                    <option value="Karachi">Karachi</option>
+                    <option value="Dadu">Dadu</option>
+                    <option value="Lahore">Lahore</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row2">
+            <div class="form-group2">
+
+                <h2>select course or event</h2>
+                <select name="course or event" id="course or event">
+                    <option value="select course or event">select course or event</option>
+                    <option value="web development">pakistan</option>
+                    <option value="ai chatbot">turkey</option>
+                </select>
+            </div>
+            <pre>                            </pre>
+            <div class="form-group2">
+                <h2> select computer proficiency</h2>
+                <select name="your computer proficiency" id="your computer proficiency">
+                    <option value="select your computer proficiency">select your computer proficiency</option>
+                    <option value="beginner">pakistan</option>
+                    <option value="advance">turkey</option>
+                </select>
+            </div>
+        </div>
+
+        <h2>your name</h2>
+        <input type="text" placeholder="name">
+        <h2>father name</h2>
+        <input type="text" placeholder=" father name">
+        <h2>email</h2>
+        <input type="email" placeholder=" example@mail.com">
+        <h2>phone no</h2>
+        <input type="number" placeholder="+92" maxlength="12">
+        <h2>CNIC</h2>
+        <input class="CNIC" type="text" size="1" maxlength="1">
+        <input class="CNIC" type="text" size="1" maxlength="1">
+        <input class="CNIC" type="text" size="1" maxlength="1">
+        <input class="CNIC" type="text" size="1" maxlength="1">
+        <input class="CNIC" type="text" size="1" maxlength="1"> -
+        <input class="CNIC" type="text" size="1" maxlength="1">
+        <input class="CNIC" type="text" size="1" maxlength="1">
+        <input class="CNIC" type="text" size="1" maxlength="1">
+        <input class="CNIC" type="text" size="1" maxlength="1">
+        <input class="CNIC" type="text" size="1" maxlength="1">
+        <input class="CNIC" type="text" size="1" maxlength="1">
+        <input class="CNIC" type="text" size="1" maxlength="1"> -
+        <input class="CNIC" type="text" size="1" maxlength="1">
+        <h2>DOB</h2>
+        <input type="date">
+<br>
+        
+<input type="file">
+<br>
+        <div class="captcha-box">
+            <input type="checkbox" id="robot-check">
+            <label for="robot-check">I am not a robot</label>
+            <div class="captcha-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/RecaptchaLogo.svg/1200px-RecaptchaLogo.svg.png"
+                    alt="captcha">
+            </div>
+        </div>
+
+
+
+        <button type="submit" class="signup-btn">submit</button>
+
+
+
+
+
+    </form>
+    <a href="assign5.html"><img class="nextassign" src="./back.png" alt=""></a>
+    <a href="assign6/home.html"><img  class="nextassign" src="./next.png" alt=""></a>
+</body>
+
+</html>

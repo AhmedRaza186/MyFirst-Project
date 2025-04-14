@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <style>
+        table {
+            width: 40%;
+            height: 50px;
+            margin-top: 15px;
+            border: 2px solid black;
+        }
+
+        th {
+            background-color: rgba(128, 128, 128, 0.438);
+        }
+
+        .blue {
+            background-color: rgba(23, 62, 88, 0.534);
+        }
+
+        fieldset {
+            margin-top: 30px;
+            width: 40%;
+            height: 300px;
+
+        }
+
+        input {
+            width: 95%;
+            height: 20px;
+        }
+
+        img {
+            width: 25%;
+            height: 50px;
+            padding-right: 30px;
+        }
+
+        .radio {
+            width: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Step1: Account</th>
+            <th>Step2: Personal Details</th>
+            <th class="blue">Step3: Your Review</th>
+        </tr>
+    </table>
+
+    <fieldset>
+        <legend>Your review</legend>
+        <label for="">How did you hear about us</label>
+        <select name="hear" id="">
+            <option value="">select your option</option>
+            <option value="">Freinds</option>
+            <option value="">Teacher</option>
+            <option value="">Online</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label for="recommend">would you visit again</label>
+        <input class="radio" name="recommend" type="radio" checked>Yes🤩
+        <input class="radio" name="recommend" type="radio">No😥
+        <input class="radio" name="recommend" type="radio">Maybe🙃
+        <br>
+        <br>
+        <label for="">Any suggestion</label>
+        <br>
+        <textarea cols="20" rows="5" name="opinion" id="">enter your opinion/suggestion</textarea>
+        <br>
+        <label for="">Picture</label>
+        <input type="file" name="" id="">
+        <br>
+        <br>
+
+        <a href="./personal.html"><img
+                src="https://cdn.hashnode.com/res/hashnode/image/upload/v1718348091188/b9599482-92b9-4ff1-b588-765bfd566f22.png?auto=compress,format&format=webp"
+                alt=""></a>
+
+        <a href="./thanks.html"><img
+                src="https://cdn.hashnode.com/res/hashnode/image/upload/v1718348127886/b930b67a-54e6-4e03-a8ed-cac17e5655b8.png?auto=compress,format&format=webp"
+                alt=""></a>
+    </fieldset>
+</body>
+
+</html>

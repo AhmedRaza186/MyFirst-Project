@@ -48,29 +48,6 @@ body {
     z-index: 2;
 }
 
-/* .S:hover{
-    z-index: -2;
-    margin: 100px;
-    
-} */
-/* .storeclone{
-    font-family:SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 0.8rem;
-    font-weight: 500;
-    display: flex;
-      align-items: center;
-      justify-content: space-around;
-      position: absolute;
-      left: 459px;
-    top: 14px;
-    z-index: -1;
-   
-    /* visibility: hidden; */
-
-
-/* .storeclone:hover{
-    background-color: blue;
-} */
 
 .Mac {
     padding-left: 30px;

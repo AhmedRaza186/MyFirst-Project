@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.teabg{
+    background-image: url(./assets/Spring_Road_Background.png); 
+  height: 780px;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: bottom center;
+}
+.jet{
+    background-image: url(./assets/indian-air-force-fighter-plane-landing-at-jodhpur-rajasthan-india-DH47N5-removebg-preview.png);
+    height: 200px;
+    width: 235px;
+    position: absolute;
+    background-size: cover;
+    animation: jahaz 2s linear  ;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+
+}
+@keyframes jahaz {
+0%{
+    left: 0px;
+
+}
+30%{
+        
+    left: 400px;
+      animation-fill-mode: both;
+}
+50%{
+      
+    left: 400px;
+      animation-fill-mode: both;
+}
+70%{
+     
+    left: 600px;
+      animation-fill-mode: both;
+    
+}
+80%{
+     left: 700px;
+    transform: rotate(45deg);
+    transform: translateY(0px);
+}
+100%{
+     left: 750px;
+        transform: rotate(45deg);
+    transform: translateY(0px);
+}
+}

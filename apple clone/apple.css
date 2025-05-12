@@ -448,9 +448,11 @@ footer {
     margin-top: 30px;
     display: flex;
     flex-wrap: nowrap;
-
 }
-
+li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 .section1 {
     padding-top: 20px;
     width: 196px;
@@ -489,4 +491,7 @@ li {
     padding: 0 22px;
     display: flex;
     justify-content: space-around;
+}
+span:hover{
+text-decoration: underline;
 }

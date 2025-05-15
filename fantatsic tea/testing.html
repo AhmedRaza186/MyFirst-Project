@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tea is Fantastic Scene</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('./assets/Spring_Road_Background.png') no-repeat center center;
+      background-size: cover;
+      overflow: hidden;
+      position: relative;
+      height: 100vh;
+    }
+    .plane {
+      position: absolute;
+      top: 50px;
+      left: -200px;
+      width: 200px;
+      animation: fly 5s linear forwards;
+    }
+    @keyframes fly {
+      to { left: 100%; }
+    }
+    .pilot {
+      position: absolute;
+      top: 100px;
+      left: 50%;
+      width: 150px;
+      opacity: 0;
+      animation: eject 5s ease-in 5s forwards;
+    }
+    @keyframes eject {
+      0% { top: 100px; opacity: 0; }
+      10% { opacity: 1; }
+      100% { top: 80%; }
+    }
+    .crowd {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 200px;
+      transform: translateX(-50%);
+      opacity: 0;
+      animation: appear 2s ease-in 10s forwards;
+    }
+    .soldier {
+      position: absolute;
+      bottom: 0;
+      left: 20%;
+      width: 100px;
+      opacity: 0;
+      animation: appear 2s ease-in 12s forwards;
+    }
+    .tea {
+      position: absolute;
+      bottom: 20%;
+      left: 50%;
+      width: 50px;
+      transform: translateX(-50%);
+      opacity: 0;
+      animation: appear 2s ease-in 14s forwards;
+    }
+    .dialogue {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 24px;
+      color: white;
+      background: rgba(0,0,0,0.5);
+      padding: 10px;
+      border-radius: 5px;
+      opacity: 0;
+      animation: appear 2s ease-in 16s forwards;
+    }
+    @keyframes appear {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <img src="./assets/indian-air-force-fighter-plane-landing-at-jodhpur-rajasthan-india-DH47N5-removebg-preview.png" alt="Plane" class="plane" />
+  <img src="./assets/Pakistanis-mock-Abhinandan.png" alt="Pilot" class="pilot" />
+  <img src="assets/images-removebg-preview mans.png" alt="Crowd" class="crowd" />
+  <img src="assets/soldier-removebg-preview.png" alt="Soldier" class="soldier" />
+  <img src="assets/hqdefault-removebg-preview.png" alt="Tea" class="tea" />
+  <div class="dialogue">Tea is fantastic</div>
+</body>
+</html>

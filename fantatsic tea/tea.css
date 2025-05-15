@@ -258,38 +258,38 @@ visibility: hidden;
     top: 30%;
     position:relative;
 
-    background-size: contain;
+    background-size: cover;
 animation: tea 100s;
 animation-delay: 26s;
 animation-fill-mode: forwards;
 }
 @keyframes tea {
   0%{
-      left: 40%;
+      left: 37%;
   z-index: -1;
     top: 10%;
 visibility: hidden;
   }
   20%{
-          left: 40%;
+          left: 37%;
   z-index: -1;
     top: 10%;
   visibility: visible;
   }  
   40%{
-           left: 40%;
+           left: 37%;
   z-index: 1;
     top: 10%;
   visibility: visible;
   }
   80%{
-          left: 40%;
+          left: 37%;
   z-index: 1;
     top: 10%;
   visibility: visible;
   }
   100%{
-       left: 40%;
+       left: 37%;
   z-index: 1;
     top: 10%;
   visibility: hidden;

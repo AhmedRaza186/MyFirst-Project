@@ -1,20 +1,432 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.mainav{
+body{
+    background-image: url(./assets/body_bg.png);
+}
+
+.mainav {
     width: 100vw;
     height: 62px;
-        border-bottom: solid 2px #dedede;
+    border-bottom: solid 2px #dedede;
     background-color: #f5f5f5;
 }
-.dabba1{
-    background-image: url(./assets/logo-pokemon-79x45.png);
-    background-size: ;
-        box-shadow: 0 0 7px 1px #666666;
+
+.navitems {
+    display: flex;
+    justify-self: center;
+    cursor: pointer;
+    list-style: none;
+}
+
+.dabba1 {
+    box-shadow: 0 0 7px 1px #666666;
+    padding: 9px 10px 8px;
+    margin: 0 10px;
+    height: 62px;
+    width: 99px;
     margin: 0 10px;
     border-right: 0;
     border-left: 0;
     background-color: #fff;
 }
+
+.dabba2 {
+    padding: 9px 10px 8px 0;
+    height: 62px;
+    width: 89px;
+    border-right: 0;
+    border-left: 0;
+    background-color: #f5f5f5;
+    border-bottom: solid 2px #dedede;
+}
+
+.hover:hover {
+    animation: nav 0.3s linear;
+}
+
+@keyframes nav {
+    0% {
+        transform: translateY(3px);
+    }
+
+    50% {
+        transform: translateY(3px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+.same-items {
+    display: flex;
+    justify-self: center;
+    cursor: pointer;
+    list-style: none;
+}
+
+.dabba3 {
+    padding: 9px 10px 8px 10px;
+    height: 62px;
+    width: 103px;
+    border-right: 0;
+    border-left: 2px solid #dedede;
+    border-bottom: solid 2px #dedede;
+    background-color: #f5f5f5;
+}
+
+.same-items:hover .same {
+    opacity: 0.2;
+}
+
+.same-items .same:hover {
+    opacity: 1;
+}
+
+.container .box:hover {
+    background: lightgray;
+    /* hovered box stays normal */
+}
+
+.dabba4 {
+    padding: 5px 10px 0px 10px;
+    height: 62px;
+    width: 182px;
+    border-right: 0;
+    border-left: 2px solid #dedede;
+    border-bottom: solid 2px #dedede;
+    background-color: #f5f5f5;
+}
+
+.dabba5 {
+    padding: 5px 10px 0px 10px;
+    height: 62px;
+    width: 182px;
+    border-right: 0;
+    border: 0;
+    border-bottom: solid 2px #dedede;
+    background-color: #f5f5f5;
+}
+
+.dabba6 {
+    padding: 5px 10px 0px 10px;
+    height: 62px;
+    width: 182px;
+    border-right: 0;
+    border: 0;
+    border-bottom: solid 2px #dedede;
+    background-color: #f5f5f5;
+}
+
+.nav2 {
+    height: 87px;
+    width: 100vw;
+    border-bottom: 2px solid #f0f0f0;
+    font-size:15px;
+    background-color: white;
+
+
+}
+
+.nav2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav2-items {
+    font-family: Roboto, arial, sans-serif;
+     font-weight: 500; 
+    color: #dedede;
+    display: flex;
+    justify-self: center;
+    width: 896px;
+    height: 87px;
+    text-align: center;
+}
+.home{
+    width: 128px;
+    height: 14px;
+}
+.first {
+    height: 93px;
+    width: 128px;
+    background-color: #919090;
+    border-bottom: 6px solid #919090;
+    border-bottom-left-radius: 10px;
+    /* border-bottom-right-radius: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.fa-house {
+    color: #f5f5f5;
+    width: 28px;
+    height: 29px;
+    font-size: larger;
+
+}
+.second {
+    height: 93px;
+    width: 128px;
+    background-color: white;
+    border-bottom: 6px solid #E3350d;
+    /* border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.Poke{
+    width: 128px;
+    height: 14px;
+    color: #666666 !important;
+    
+}
+
+.pokeball {
+    background-image: url(./assets/pokeball.png);
+    background-size: cover;
+    color: #f5f5f5;
+    width: 32px;
+    height: 33px;
+    color: #666666 !important;
+}
+.second:hover{
+background-color: #E3350d;
+}
+.second:hover .Poke{
+    color: white !important;
+}
+.second:hover .pokeball{
+  background-image: url(./assets/pokeballwhite.png);
+}
+.third {
+    height: 93px;
+    width: 128px;
+    background-color: white;
+    border-bottom: 6px solid #EE6B2f;
+    /* border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.games{
+    width: 128px;
+    height: 14px;
+    color: #666666 !important;
+        position: relative;
+    bottom: 4px;
+    
+}
+
+.gamesicon {
+    background-image: url(./assets/gamepad.png);
+    background-size: cover;
+    color: #f5f5f5;
+    width: 32px;
+    height: 33px;
+    color: #666666 !important;
+       position: relative;
+    bottom: 4px;
+}
+.third:hover{
+background-color: #EE6B2f;
+}
+.third:hover .games{
+    color: white !important;
+}
+.third:hover .gamesicon{
+  background-image: url(./assets/gamepadwhite.png);
+}
+.fourth {
+    height: 93px;
+    width: 128px;
+    background-color: white;
+    border-bottom: 6px solid #E6BC2F;
+    /* border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card{
+    width: 128px;
+    height: 14px;
+    color: #666666 !important;   
+}
+
+.cardicon {
+    background-image: url(./assets/trading.png);
+    background-size: cover;
+    color: #f5f5f5;
+    width: 32px;
+    height: 33px;
+    color: #666666 !important;
+
+}
+.fourth:hover{
+background-color: #E6BC2F;
+}
+.fourth:hover .card{
+    color: white !important;
+}
+.fourth:hover .cardicon{
+  background-image: url(./assets/tradingwhite.png);
+}
+.fifth {
+    height: 93px;
+    width: 128px;
+    background-color: white;
+    border-bottom: 6px solid #4dad58;
+    /* border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.animation{
+    width: 128px;
+    height: 14px;
+    color: #666666 !important;   
+}
+
+.animationicon {
+    background-image: url(./assets/play-button.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #f5f5f5;
+    width: 32px;
+    height: 29px;
+    color: #666666 !important;
+
+}
+.fifth:hover{
+background-color: #4dad58;
+}
+.fifth:hover .animation{
+    color: white !important;
+}
+.fifth:hover .animationicon{
+  background-image: url(./assets/play-buttonwhite.png);
+}
+.sixth {
+    height: 93px;
+    width: 128px;
+    background-color: white;
+    border-bottom: 6px solid #30a7d7;
+    /* border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.play{
+    width: 128px;
+    height: 14px;
+    color: #666666 !important;
+    position: relative;
+    bottom: 4px;   
+}
+
+.playicon {
+    background-image: url(./assets/trophy-cup.png);
+    background-size: cover;
+    color: #f5f5f5;
+    width: 32px;
+    height: 29px;
+    color: #666666 !important;
+    position: relative;
+    bottom: 4px;
+
+}
+.sixth:hover{
+background-color: #30a7d7;
+}
+.sixth:hover .play{
+    color: white !important;
+}
+.sixth:hover .playicon{
+  background-image: url(./assets/trophy-cupwhite.png);
+}
+.seventh {
+    height: 93px;
+    width: 128px;
+    background-color: white;
+    border-bottom: 6px solid #1b53ba;
+    border-bottom-right-radius: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.news{
+    width: 128px;
+    height: 14px;
+    color: #666666 !important;   
+}
+
+.newsicon {
+    background-image: url(./assets/news.png);
+    background-size: cover;
+    color: #f5f5f5;
+    width: 32px;
+    height: 33px;
+    color: #666666 !important;
+
+}
+.seventh:hover{
+background-color: #1b53ba;
+}
+.seventh:hover .news{
+    color: white !important;
+}
+.seventh:hover .newsicon{
+  background-image: url(./assets/newswhite.png);
+}
+.hero{
+    background-image: url(./assets/container_bg.png);
+    background-color: white;
+    width: 1280px;
+    height: 2536px;
+    margin:0 158px;
+}
+.sidebar{
+     width: 70px;
+      height: 200px;
+      border-radius: 0 15px 0 0;
+      overflow: hidden;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+      font-family: sans-serif;
+}
+ .login, .search {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 70%;
+      color: white;
+      font-size: 12px;
+    }
+        .login {
+      background-color: #4CAF50; /* Green */
+      position: relative;
+    }

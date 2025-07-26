@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="#" class="logo">Portfolio.</a>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <ul class="nav-pages" id="nav-pages">
+        <li> <a href="#home" class="active1 nav-link">Home</a></li>
+        <li> <a href="#about" class="active2 nav-link">About</a></li>
+        <li> <a href="#contact" class="active3 nav-link">Contact</a></li>
+        <li> <a href="#projects" class="active4 nav-link">Projects</a></li>
+        <li> <a href="./ahmed-cv.png" target="_blank" class="active5 nav-link">CV</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="bars-animation">
+    <div class="bars" style="--i:6;"></div>
+    <div class="bars" style="--i:5;"></div>
+    <div class="bars" style="--i:4;"></div>
+    <div class="bars" style="--i:3;"></div>
+    <div class="bars" style="--i:2;"></div>
+    <div class="bars" style="--i:1;"></div>
+  </div>
+  <div class="main">
+    <section id="home">
+      <div class="home-info">
+        <h1>Ahmed Raza</h1>
+        <span style="--i:0;">Frontend Developer</span>
+        <span style="--i:1;">Backend Developer</span>
+        <p style="padding-top: 5%;">I am Ahmed Raza, a motivated and self-taught web developer currently pursuing my
+          intermediate education in Commerce. I have hands-on experience with HTML and CSS, and I’m actively learning
+          modern web development practices </p>
+        <div class="btn-social">
+          <a href="./ahmed-cv.png" target="_blank" class="btn">Download CV</a>
+          <div class="social">
+            <a href="https://github.com/AhmedRaza186" target="_blank" id="icon1"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ahmed-raza-14188b35b/" target="_blank" id="icon2"><i
+                class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100073794093657" target="_blank" id="icon3"><i
+                class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/itx_me__ahmed/?next=%2F" target="_blank" id="icon4"><i
+                class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="home-img">
+        <div class="img-box">
+          <div class="img-item">
+            <img src="./ahmedphotoforCV-removebg-preview.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="line"></div>
+    <section id="about">
+      <div class="about-container">
+        <h2 class="about-heading"><span style="color: white;">About</span> Me</h2>
+
+        <div class="about-content">
+          <div class="about-text">
+            <p class="fade-in">
+              I'm <strong>Ahmed Raza</strong>, a passionate self-taught developer currently pursuing my intermediate in
+              Commerce.
+              I love building modern web experiences using HTML, CSS, JavaScript, and I’m expanding my knowledge in
+              backend as well.
+            </p>
+
+            <h3 class="fade-in">Education</h3>
+            <ul class="timeline">
+              <li class="fade-in delay-1">
+                <strong>2022 - 2024:</strong> Matriculation – Science
+              </li>
+              <li class="fade-in delay-2">
+                <strong>2024 - Present:</strong> Intermediate in Commerce (Ongoing)
+              </li>
+              <li class="fade-in delay-3">
+                <strong>2025 – Present:</strong> Web & App Development Course – Saylani Mass IT Training Program
+              </li>
+            </ul>
+
+            <h3 class="fade-in">Skills</h3>
+            <div class="skills fade-in delay-3">
+              <div class="skill">
+                <span>HTML</span>
+                <div class="skill-bar">
+                  <div class="fill html"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <span>CSS</span>
+                <div class="skill-bar">
+                  <div class="fill css"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <span>Bootstrap</span>
+                <div class="skill-bar">
+                  <div class="fill Bootstrap"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <span>Git & GitHub</span>
+                <div class="skill-bar">
+                  <div class="fill git"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="line"></div>
+    <section id="contact">
+      <div class="contact-container">
+        <h2 class="section-heading"><span style="color: white;">Contact</span> Me</h2>
+        <form class="contact-form">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" name="number" placeholder="Your Number" required maxlength="11">
+          </div>
+          <div class="form-group">
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn2">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <div class="line"></div>
+  <section id="projects">
+  <div class="projects-container">
+    <h2 class="section-heading">My Projects</h2>
+    <div class="projects-grid">
+      
+      <div class="project-card">
+        <img src="../netflix clone/logo.svg" alt="Netflix Clone">
+        <h3>Netflix Clone</h3>
+        <p>A replica of Netflix UI using HTML, CSS, and responsive layouts.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="./../amazon clone/amazon_logo.png" alt="Amazon Clone">
+        <h3>Amazon Clone</h3>
+        <p>E-commerce UI built with flex/grid and responsive design techniques.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="../pokemon clone/assets/logo-pokemon-79x45.png" alt="Pokemon Clone">
+        <h3>Pokemon Clone</h3>
+        <p>Search and display Pokémon data using PokéAPI and JavaScript.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="./apple-removebg-preview.png" alt="Apple Clone">
+        <h3>Apple Clone</h3>
+        <p>Apple homepage clone focusing on elegant layout and animations.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="projects-logo.png" alt="Animation Practice">
+        <h3>Animation Practice</h3>
+        <p>A mini project to practice CSS transitions and UI hover effects.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="./portfolio-removebg-preview.png" alt="Portfolio Website" >
+        <h3>Portfolio Website</h3>
+        <p>This current portfolio website showcasing my work and skills.</p>
+      </div>
+
+    </div>
+    <div class="more-projects">
+      <a href="https://github.com/AhmedRaza186" target="_blank" class="btn">See More Projects</a>
+    </div>
+  </div>
+</div>
+</section>
+
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav-pages").classList.toggle("nav-active");
+    }
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          const id = entry.target.getAttribute("id");
+          const link = document.querySelector(`.nav-link[href="#${id}"]`);
+
+          if (entry.isIntersecting) {
+            // Highlight nav
+            navLinks.forEach(link => link.classList.remove("active"));
+            if (link) link.classList.add("active");
+
+            // Animate fade-in items
+            entry.target.querySelectorAll(".fade-in").forEach(el => {
+              el.classList.add("animate");
+            });
+          }
+        });
+      },
+      {
+        threshold: 0.5 // 50% visible = active
+      }
+    );
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+
+</html>
